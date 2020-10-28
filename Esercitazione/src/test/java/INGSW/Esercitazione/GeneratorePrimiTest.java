@@ -23,8 +23,8 @@ public class GeneratorePrimiTest {
 	
 	@Test
 	public void GeneratorePrimiTestato() {
-		assertEquals(new ArrayList<Integer>(), tester.getArrayList());
-		assertEquals(Arrays.asList(2,3,5,7),  tester.getArrayList());
+		assertEquals(new ArrayList<Integer>(), tester.main(null));
+		assertEquals(Arrays.asList(2,3,5,7),  tester.main(null));
 	}
 	
 	@Test

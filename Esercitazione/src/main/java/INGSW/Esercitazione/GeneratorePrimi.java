@@ -6,12 +6,12 @@ import java.util.Scanner;
 
 public class GeneratorePrimi {
 	
-	public static ArrayList<Integer> l;
+	
 	public static int n,k;
 	public static ArrayList<Integer> main(String[] args) {
 		System.out.println("inserisci un numero cosi genero tutti i numeri primi fino a quel numero");
 		
-		 l= new ArrayList<Integer>();
+		ArrayList<Integer> l= new ArrayList<Integer>();
 		
 		Scanner input = new Scanner(System.in);
 		n = input.nextInt(); 
@@ -23,10 +23,6 @@ public class GeneratorePrimi {
 			if(genera(k)) 
 				l.add(k);
 		}
-		return l;
-	}
-	
-	public static ArrayList<Integer> getArrayList(){
 		return l;
 	}
 	
