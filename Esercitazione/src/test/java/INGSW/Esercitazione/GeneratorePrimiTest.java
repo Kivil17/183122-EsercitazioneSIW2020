@@ -4,6 +4,7 @@ package INGSW.Esercitazione;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -22,15 +23,15 @@ public class GeneratorePrimiTest {
 	
 	@Test
 	public void GeneratorePrimiTestato() {
-		assertEquals(new ArrayList<Integer>(), tester.genera(1));
-		assertEquals(Arrays.asList(2,3,5,7), tester.genera(20));
+		assertEquals(new ArrayList<Integer>(), tester.getArrayList());
+		assertEquals(Arrays.asList(2,3,5,7),  tester.getArrayList());
 	}
 	
 	@Test
 	public void isWorks() {
 		assertFalse(tester.genera(9));
 		assertFalse(tester.genera(1));
-		assertFalse(tester.genera(2));
+		assertTrue(tester.genera(2));
 	}
 
 	

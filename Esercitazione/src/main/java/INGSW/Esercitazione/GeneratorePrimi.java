@@ -6,15 +6,17 @@ import java.util.Scanner;
 
 public class GeneratorePrimi {
 	
-	public static int k=0;
 	public static ArrayList<Integer> l;
-	public static ArrayList main(String[] args) {
+	public static int n,k;
+	public static ArrayList<Integer> main(String[] args) {
 		System.out.println("inserisci un numero cosi genero tutti i numeri primi fino a quel numero");
 		
-		l = new ArrayList<Integer>();
+		 l= new ArrayList<Integer>();
 		
 		Scanner input = new Scanner(System.in);
-		int n = input.nextInt();
+		n = input.nextInt();
+		if(n<2)
+			return l;
 		
 		for(k=2; k<n; k++)
 		{
@@ -22,10 +24,16 @@ public class GeneratorePrimi {
 				l.add(k);
 		}
 		return l;
-		
+	}
+	
+	public static ArrayList<Integer> getArrayList(){
+		return l;
 	}
 	
 	public static boolean genera(int n) {
+		
+		if(n<2)
+			return false;
 		
 		if(n==2)
 			return true;
