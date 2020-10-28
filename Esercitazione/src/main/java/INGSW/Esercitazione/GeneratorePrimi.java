@@ -14,7 +14,7 @@ public class GeneratorePrimi {
 		 l= new ArrayList<Integer>();
 		
 		Scanner input = new Scanner(System.in);
-		n = input.nextInt();
+		n = input.nextInt(); 
 		if(n<2)
 			return l;
 		

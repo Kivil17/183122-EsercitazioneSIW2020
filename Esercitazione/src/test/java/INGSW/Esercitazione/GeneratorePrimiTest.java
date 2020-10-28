@@ -12,7 +12,7 @@ import java.util.Arrays;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class GeneratorePrimiTest {
+public class GeneratorePrimiTest { 
 	
 	private static GeneratorePrimi tester;
 	 
