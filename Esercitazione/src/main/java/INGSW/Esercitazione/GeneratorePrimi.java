@@ -12,7 +12,7 @@ public class GeneratorePrimi {
 		System.out.println("inserisci un numero cosi genero tutti i numeri primi fino a quel numero");
 		
 		ArrayList<Integer> l= new ArrayList<Integer>();
-		
+		 
 		Scanner input = new Scanner(System.in);
 		n = input.nextInt(); 
 		if(n<2)
